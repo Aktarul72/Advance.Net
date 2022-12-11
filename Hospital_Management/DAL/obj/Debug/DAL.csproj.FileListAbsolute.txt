@@ -1,0 +1,14 @@
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.dll.config
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.Migrations.Tableadded.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

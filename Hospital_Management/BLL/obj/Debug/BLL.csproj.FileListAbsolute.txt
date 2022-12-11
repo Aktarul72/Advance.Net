@@ -1,0 +1,14 @@
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\BLL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\BLL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\obj\Debug\BLL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\obj\Debug\BLL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\AutoMapper.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\EntityFramework.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\DAL.dll.config
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\AutoMapper.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\EntityFramework.xml

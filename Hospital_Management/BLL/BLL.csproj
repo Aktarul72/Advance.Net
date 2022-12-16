@@ -53,6 +53,7 @@
     <Compile Include="DTOs\ItemExamDTO.cs" />
     <Compile Include="DTOs\MaterialDTO.cs" />
     <Compile Include="DTOs\MedicineDTO.cs" />
+    <Compile Include="DTOs\OPDBilling.cs" />
     <Compile Include="DTOs\OTDetailsDTO.cs" />
     <Compile Include="DTOs\PatientIPDDTO.cs" />
     <Compile Include="DTOs\SupplierDTO.cs" />
@@ -61,7 +62,12 @@
     <Compile Include="Services\CustomerOPDService.cs" />
     <Compile Include="Services\CustomerPharmacyService.cs" />
     <Compile Include="Services\DoctorService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\ItemExamService.cs" />
+    <Compile Include="Services\MaterialService.cs" />
     <Compile Include="Services\MedicineService.cs" />
+    <Compile Include="Services\OTDetailsService.cs" />
+    <Compile Include="Services\PatientIPDService.cs" />
     <Compile Include="Services\SupplierService.cs" />
   </ItemGroup>
   <ItemGroup>

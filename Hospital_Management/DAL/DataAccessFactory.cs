@@ -43,6 +43,14 @@ namespace DAL
         {
             return new MaterialRepo();
         }
+        public static IRepo<OPDBilling, int, OPDBilling> OPDBillingDataAccess()
+        {
+            return new OPDBillingRepo();
+        }
+        public static IRepo<OPDOrderDetails, int, OPDOrderDetails> OPDOrderDetailsDataAccess()
+        {
+            return new OPDOrderDetailsRepo();
+        }
         public static IRepo<CustomerPharmacy, int, CustomerPharmacy> CustomerPharmacyDataAccess()
         {
             return new CustomerPharmacyRepo();
@@ -54,6 +62,14 @@ namespace DAL
         public static IRepo<Supplier, int, Supplier> SupplierDataAccess()
         {
             return new SupplierRepo();
+        }
+        public static IRepo<PharmacyBilling, int, PharmacyBilling> PharmacyBillingDataAccess()
+        {
+            return new PharmacyBillingRepo();
+        }
+        public static IRepo<PharmacyOrderDetails, int, PharmacyOrderDetails> PharmacyOrderDetailsDataAccess()
+        {
+            return new PharmacyOrderDetailsRepo();
         }
 
     }

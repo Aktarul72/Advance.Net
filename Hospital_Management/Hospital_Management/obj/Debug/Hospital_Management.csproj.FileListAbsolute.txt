@@ -356,3 +356,12 @@ E:\AIUB ALL FILES\Hospital_Management\Hospital_Management\bin\System.Web.Http.xm
 E:\AIUB ALL FILES\Hospital_Management\Hospital_Management\bin\DAL.pdb
 E:\AIUB ALL FILES\Hospital_Management\Hospital_Management\bin\DAL.dll.config
 E:\AIUB ALL FILES\Hospital_Management\Hospital_Management\bin\AutoMapper.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\System.Net.Http.Formatting.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\System.Web.Http.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\AutoMapper.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\System.Net.Http.Formatting.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\System.Web.Http.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\DAL.dll.config
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\Hospital_Management\bin\AutoMapper.xml

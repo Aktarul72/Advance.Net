@@ -50,3 +50,5 @@ E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\AutoMappe
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\BLL\bin\Debug\AutoMapper.xml
 E:\AIUB ALL FILES\Hospital_Management\BLL\bin\Debug\AutoMapper.dll
 E:\AIUB ALL FILES\Hospital_Management\BLL\bin\Debug\AutoMapper.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\BLL\bin\Debug\AutoMapper.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\BLL\bin\Debug\AutoMapper.xml

@@ -53,9 +53,9 @@ namespace BLL.Services
             DataAccessFactory.CabinDataAccess().Delete(id);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Cabin, CabinDTO>());
             var mapper = new Mapper(config);
-            var Medi = mapper.Map<CabinDTO>(data);
+            var cab = mapper.Map<CabinDTO>(data);
 
-            return Medi;
+            return cab;
 
         }
         public static CabinDTO Update(CabinDTO dto)

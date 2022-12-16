@@ -19,7 +19,6 @@ E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bi
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.TablesAdded.resources
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.FKCustomerOPD.resources
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
@@ -59,3 +58,5 @@ E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.Tablesadded.r
 E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated.resources
 E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated1.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated1.resources

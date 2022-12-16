@@ -1,14 +1,61 @@
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\DAL.dll
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\DAL.pdb
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.dll
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.pdb
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\DAL.dll.config
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\EntityFramework.dll
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\EntityFramework.xml
+E:\AIUB ALL FILES\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\DAL.dll.config
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\EntityFramework.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\EntityFramework.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.TablesAdded.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.Migrations.FKCustomerOPD.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital Project\Hospital_Management\DAL\obj\Debug\DAL.pdb
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\DAL.dll.config
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\DAL.dll
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\DAL.pdb
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\EntityFramework.dll
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\EntityFramework.xml
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.Migrations.TablesAdded.resources
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.Migrations.FKCustomerOPD.resources
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.dll
+G:\10 semestar\Dot Net\Final Project\Advance.net\Hospital_Management\DAL\obj\Debug\DAL.pdb
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.dll.config
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.dll
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.pdb
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.dll
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.pdb
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\DAL.dll.config
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.dll
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.dll
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.xml
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\bin\Debug\EntityFramework.SqlServer.xml
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
-E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.Migrations.Tableadded.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.Migrations.TablesAdded.resources
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.Migrations.FKCustomerOPD.resources
 E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.dll
+E:\AIUB ALL FILES\10th Semester AIUB\Hospital_Management\DAL\obj\Debug\DAL.pdb
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.Tablesadded.resources
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated.resources
+E:\AIUB ALL FILES\Hospital_Management\DAL\obj\Debug\DAL.Migrations.PatientIPDupdated1.resources

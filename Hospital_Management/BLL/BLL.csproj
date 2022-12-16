@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A3997092-3AE9-41E9-8DF3-F5E5571CD54C}</ProjectGuid>
+    <ProjectGuid>{C64A6035-B7F4-41DD-9B86-D23D0D8DE98F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL</RootNamespace>
@@ -55,28 +55,22 @@
     <Compile Include="DTOs\MedicineDTO.cs" />
     <Compile Include="DTOs\OTDetailsDTO.cs" />
     <Compile Include="DTOs\PatientIPDDTO.cs" />
-    <Compile Include="DTOs\PaymentInfoDTO.cs" />
     <Compile Include="DTOs\SupplierDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CabinService.cs" />
     <Compile Include="Services\CustomerOPDService.cs" />
     <Compile Include="Services\CustomerPharmacyService.cs" />
     <Compile Include="Services\DoctorService.cs" />
-    <Compile Include="Services\EmployeeService.cs" />
-    <Compile Include="Services\ItemExamService.cs" />
-    <Compile Include="Services\MaterialService.cs" />
     <Compile Include="Services\MedicineService.cs" />
-    <Compile Include="Services\OTDetailsService.cs" />
-    <Compile Include="Services\PatientIPDService.cs" />
-    <Compile Include="Services\PaymentInfoService.cs" />
     <Compile Include="Services\SupplierService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{0d085268-55ef-4827-948a-803178a82fa9}</Project>
+      <Project>{eea4d4dc-7353-4584-be0d-d6acfdf90229}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

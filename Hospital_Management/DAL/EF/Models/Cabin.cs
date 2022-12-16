@@ -14,6 +14,9 @@ namespace DAL.EF.Models
         [StringLength(50)]
         public string CategoryName { get; set; }
         [Required]
+        [StringLength(30)]
+        public string Status { get; set; }
+        [Required]
         public double Rent { get; set; }
 
     }

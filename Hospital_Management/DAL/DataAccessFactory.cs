@@ -23,10 +23,6 @@ namespace DAL
         {
             return new DoctorRepo();
         }
-        public static IRepo<PaymentInfo, int, PaymentInfo>PaymentInfoDataAccess()
-        {
-            return new PaymentInfoRepo();
-        }
         public static IRepo<CustomerOPD, int, CustomerOPD> CustomerOPDDataAccess()
         {
             return new CustomerOPDRepo();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +11,13 @@ namespace DAL.EF.Models
     public class OPDOrderDetails
     {
         public int Id { get; set; }
-        [Required]
-        [StringLength(200)]
-        public string Name { get; set; }
-        [Required]
-        public int Quantity { get; set; }
-        [Required]
-        public double Amount { get; set; }
-        [Required]
-        public double TotalAmount { get; set; }
+
+        [ForeignKey("OPDBilling")]
+        public int OPDBillingId { get; set; }
+        public virtual OPDBilling OPDBilling { get; set; }
+
+        [ForeignKey("ItemExam")]
+        public int ItemExamId { get; set; }
+        public virtual ItemExam ItemExam { get; set; }
     }
 }

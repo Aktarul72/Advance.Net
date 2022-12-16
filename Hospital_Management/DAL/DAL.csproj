@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D085268-55EF-4827-948A-803178A82FA9}</ProjectGuid>
+    <ProjectGuid>{EEA4D4DC-7353-4584-BE0D-D6ACFDF90229}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAL</RootNamespace>
@@ -58,24 +58,32 @@
     <Compile Include="EF\Models\CustomerPharmacy.cs" />
     <Compile Include="EF\Models\Doctor.cs" />
     <Compile Include="EF\Models\Employee.cs" />
+    <Compile Include="EF\Models\OPDOrderDetails.cs" />
     <Compile Include="EF\Models\ItemExam.cs" />
     <Compile Include="EF\Models\Material.cs" />
     <Compile Include="EF\Models\Medicine.cs" />
-    <Compile Include="EF\Models\OPDOrderDetails.cs" />
+    <Compile Include="EF\Models\OPDBilling.cs" />
     <Compile Include="EF\Models\OTDetails.cs" />
     <Compile Include="EF\Models\PatientIPD.cs" />
-    <Compile Include="EF\Models\PaymentInfo.cs" />
+    <Compile Include="EF\Models\PharmacyBilling.cs" />
     <Compile Include="EF\Models\PharmacyOrderDetails.cs" />
     <Compile Include="EF\Models\Supplier.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202212110939227_Tableadded.cs" />
-    <Compile Include="Migrations\202212110939227_Tableadded.designer.cs">
-      <DependentUpon>202212110939227_Tableadded.cs</DependentUpon>
+    <Compile Include="Migrations\202212161927536_Tablesadded.cs" />
+    <Compile Include="Migrations\202212161927536_Tablesadded.designer.cs">
+      <DependentUpon>202212161927536_Tablesadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212161930371_PatientIPDupdated.cs" />
+    <Compile Include="Migrations\202212161930371_PatientIPDupdated.designer.cs">
+      <DependentUpon>202212161930371_PatientIPDupdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212161931539_PatientIPDupdated1.cs" />
+    <Compile Include="Migrations\202212161931539_PatientIPDupdated1.designer.cs">
+      <DependentUpon>202212161931539_PatientIPDupdated1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\CabinRepo.cs" />
-    <Compile Include="Repos\CustomerOPDRepo.cs" />
     <Compile Include="Repos\CustomerPharmacyRepo.cs" />
     <Compile Include="Repos\DoctorRepo.cs" />
     <Compile Include="Repos\EmployeeRepo.cs" />
@@ -84,18 +92,24 @@
     <Compile Include="Repos\MedicineRepo.cs" />
     <Compile Include="Repos\OTDetailsRepo.cs" />
     <Compile Include="Repos\PatientIPDRepo.cs" />
-    <Compile Include="Repos\PaymentInfoRepo.cs" />
+    <Compile Include="Repos\CustomerOPDRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\SupplierRepo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <EmbeddedResource Include="Migrations\202212161927536_Tablesadded.resx">
+      <DependentUpon>202212161927536_Tablesadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212161930371_PatientIPDupdated.resx">
+      <DependentUpon>202212161930371_PatientIPDupdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212161931539_PatientIPDupdated1.resx">
+      <DependentUpon>202212161931539_PatientIPDupdated1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202212110939227_Tableadded.resx">
-      <DependentUpon>202212110939227_Tableadded.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

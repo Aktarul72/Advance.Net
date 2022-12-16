@@ -23,17 +23,29 @@ namespace DAL.EF.Models
         [StringLength(250)]
         [Required]
         public string Address { get; set; }
-        [Required]
-        public int Age { get; set; }
-        public string DOB { get; set; }
         [StringLength(20)]
         [Required]
         public string Gender { get; set; }
+        [Required]
+        public int Age { get; set; }
+        public DateTime DOB { get; set; }
         [StringLength(15)]
         [Required]
         public string Phone { get; set; }
         [StringLength(80)]
         public string Occupation { get; set; }
+        public int? Nid { get; set; }
+        public DateTime AdmissionDate { get; set; }
+        [StringLength(180)]
+        [Required]
+        public string RefdBy { get; set; }
+        [StringLength(180)]
+        public string DutyDoctor { get; set; }
+        [Required]
+        public double PaidAmount { get; set; }
+        [Required]
+        public string PaymentStatus { get; set; }
+
 
         [ForeignKey("Doctor")]
         public int DoctorId { get; set; }
@@ -43,8 +55,5 @@ namespace DAL.EF.Models
         public int CabinId { get; set; }
         public virtual Cabin Cabin { get; set; }
 
-        [ForeignKey("PaymentInfo")]
-        public int PaymentId { get; set; }
-        public virtual PaymentInfo PaymentInfo { get; set; }
     }
 }

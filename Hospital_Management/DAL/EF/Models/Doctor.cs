@@ -23,6 +23,9 @@ namespace DAL.EF.Models
         public string Phone { get; set; }
         [Required]
         [StringLength(300)]
-        public string Designation { get; set; }
+        public string Qualification { get; set; }
+        [StringLength(300)]
+        [Required]
+        public string Specialization { get; set; }
     }
 }

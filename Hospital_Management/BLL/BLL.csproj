@@ -53,9 +53,12 @@
     <Compile Include="DTOs\ItemExamDTO.cs" />
     <Compile Include="DTOs\MaterialDTO.cs" />
     <Compile Include="DTOs\MedicineDTO.cs" />
-    <Compile Include="DTOs\OPDBilling.cs" />
+    <Compile Include="DTOs\OPDBillingDTO.cs" />
+    <Compile Include="DTOs\OPDOrderDetailsDTO.cs" />
     <Compile Include="DTOs\OTDetailsDTO.cs" />
     <Compile Include="DTOs\PatientIPDDTO.cs" />
+    <Compile Include="DTOs\PharmacyBillingDTO.cs" />
+    <Compile Include="DTOs\PharmacyOrderDetailsDTO.cs" />
     <Compile Include="DTOs\SupplierDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CabinService.cs" />
@@ -66,8 +69,12 @@
     <Compile Include="Services\ItemExamService.cs" />
     <Compile Include="Services\MaterialService.cs" />
     <Compile Include="Services\MedicineService.cs" />
+    <Compile Include="Services\OPDBillingService.cs" />
+    <Compile Include="Services\OPDOrderDetailsService.cs" />
     <Compile Include="Services\OTDetailsService.cs" />
     <Compile Include="Services\PatientIPDService.cs" />
+    <Compile Include="Services\PharmacyBillingService.cs" />
+    <Compile Include="Services\PharmacyOrderDetailsService.cs" />
     <Compile Include="Services\SupplierService.cs" />
   </ItemGroup>
   <ItemGroup>

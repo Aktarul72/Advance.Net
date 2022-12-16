@@ -91,10 +91,12 @@
     <Compile Include="Repos\MaterialRepo.cs" />
     <Compile Include="Repos\MedicineRepo.cs" />
     <Compile Include="Repos\OPDBillingRepo.cs" />
+    <Compile Include="Repos\OPDOrderDetailsRepo.cs" />
     <Compile Include="Repos\OTDetailsRepo.cs" />
     <Compile Include="Repos\PatientIPDRepo.cs" />
     <Compile Include="Repos\CustomerOPDRepo.cs" />
     <Compile Include="Repos\PharmacyBillingRepo.cs" />
+    <Compile Include="Repos\PharmacyOrderDetailsRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\SupplierRepo.cs" />
   </ItemGroup>

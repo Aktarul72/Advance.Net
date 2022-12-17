@@ -12,9 +12,9 @@ namespace DAL.EF.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey("PharmacyBilling")]
-        public int PharmacyBillingId { get; set; }
-        public virtual PharmacyBilling PharmacyBilling { get; set; }
+        [ForeignKey("CustomerPharmacy")]
+        public int CustomerPharmacyId { get; set; }
+        public virtual CustomerPharmacy CustomerPharmacy { get; set; }
 
         [ForeignKey("Medicine")]
         public int MedicineId { get; set; }

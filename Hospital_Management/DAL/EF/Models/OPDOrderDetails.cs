@@ -12,9 +12,9 @@ namespace DAL.EF.Models
     {
         public int Id { get; set; }
 
-        [ForeignKey("OPDBilling")]
-        public int OPDBillingId { get; set; }
-        public virtual OPDBilling OPDBilling { get; set; }
+        [ForeignKey("CustomerOPD")]
+        public int CustomerOPDId { get; set; }
+        public virtual CustomerOPD CustomerOPD { get; set; }
 
         [ForeignKey("ItemExam")]
         public int ItemExamId { get; set; }

@@ -9,15 +9,15 @@ using System.Web.Http;
 
 namespace Hospital_Management.Controllers
 {
-    public class MedicineController : ApiController
+    public class CabinController : ApiController
     {
-        [Route("api/medicine")]
+        [Route("api/cabin")]
         [HttpGet]
         public HttpResponseMessage Get()
         {
             try
             {
-                var data = MedicineService.Get();
+                var data = CabinService.Get();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -26,13 +26,13 @@ namespace Hospital_Management.Controllers
             }
         }
 
-        [Route("api/medicine/add")]
+        [Route("api/cabin/add")]
         [HttpPost]
-        public HttpResponseMessage Add(MedicineDTO medicine)
+        public HttpResponseMessage Add(CabinDTO Cabin)
         {
             try
             {
-                var data = MedicineService.Add(medicine);
+                var data = CabinService.Add(Cabin);
                 if (data != null)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, data);
@@ -44,7 +44,8 @@ namespace Hospital_Management.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-        [Route("api/medicine/delete/{id}")]
+
+        [Route("api/cabin/delete/{id}")]
         [HttpGet]
         public HttpResponseMessage Delete(int id)
         {
@@ -58,12 +59,10 @@ namespace Hospital_Management.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
 
-
+            
         }
 
-
-
-        [Route("api/medicine/update/{id}")]
+        [Route("api/cabin/update/{id}")]
         [HttpPost]
         public HttpResponseMessage Update(MedicineDTO obj, int id)
         {
@@ -77,7 +76,7 @@ namespace Hospital_Management.Controllers
             {
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
-
+            
         }
     }
 }

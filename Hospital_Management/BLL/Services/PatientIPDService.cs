@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static PatientIPDDTO Get(int id)
         {
-            var data = DataAccessFactory.PatientIPDDataAccess().Get();
+            var data = DataAccessFactory.PatientIPDDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<PatientIPD, PatientIPDDTO>();
 
@@ -62,6 +62,19 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.PatientIPDDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.FatherName = dto.FatherName;
+            data.MotherName = dto.MotherName;
+            data.Address = dto.Address;
+            data.Gender = dto.Gender;
+            data.Age = dto.Age;
+            data.Phone  = dto.Phone;
+            data.Occupation = dto.Occupation;
+            data.Nid = dto.Nid;
+            data.AdmissionDate = dto.AdmissionDate;
+            data.RoomDetails = dto.RoomDetails;
+            data.RefdBy = dto.RefdBy;
+            data.DutyDoctor = dto.DutyDoctor;
+            data.PaidAmount = dto.PaidAmount;
             DataAccessFactory.PatientIPDDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<PatientIPD, PatientIPDDTO>());
             var mapper = new Mapper(config);

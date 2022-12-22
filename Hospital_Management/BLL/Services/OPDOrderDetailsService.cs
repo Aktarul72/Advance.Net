@@ -70,5 +70,15 @@ namespace BLL.Services
             return OPDOrderDetails;
 
         }
+
+        public static List<OPDOrderDetailsDTO> OrderView(int id)
+        {
+            string s = id.ToString();
+            var data = Get();
+            var dt = (from d in data
+                      where d.CustomerOPDId.ToString().StartsWith(s)
+                      select d).ToList();
+            return dt;
+        }
     }
 }

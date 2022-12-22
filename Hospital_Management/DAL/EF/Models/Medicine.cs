@@ -14,11 +14,23 @@ namespace DAL.EF.Models
         [Required]
         [StringLength(200)]
         public string Name { get; set; }
+
         [Required]
-        public double Rate { get; set; }
+        public int Quantity { get; set; }
+        [Required]
+        public double Price { get; set; }
+
+        [Required]
+        public double TotalPrice { get; set; }
 
         [ForeignKey("Supplier")]
-        public int SupplierId { get; set; }
+        public int? SupplierId { get; set; }
         public virtual Supplier Supplier { get; set; }
+
+        public Medicine()
+        {
+            PharmacyOrderDetails = new List<PharmacyOrderDetails>();
+        }
+        public virtual List<PharmacyOrderDetails> PharmacyOrderDetails { get; set; }
     }
 }

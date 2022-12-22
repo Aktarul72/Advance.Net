@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static MaterialDTO Get(int id)
         {
-            var data = DataAccessFactory.MaterialDataAccess().Get();
+            var data = DataAccessFactory.MaterialDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Material, MaterialDTO>();
 
@@ -62,6 +62,10 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.MaterialDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.Details = dto.Details;
+            data.Quantity = dto.Quantity;
+            data.Price = dto.Price;
+            data.TotalPrice = dto.TotalPrice;
             DataAccessFactory.MaterialDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Material, MaterialDTO>());
             var mapper = new Mapper(config);

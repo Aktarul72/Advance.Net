@@ -27,5 +27,19 @@ namespace DAL.EF.Models
         [StringLength(300)]
         [Required]
         public string Specialization { get; set; }
+
+        public Doctor()
+        {
+            PatientIPDs = new List<PatientIPD>();
+            CustomerOPDs = new List<CustomerOPD>();
+            OTDetails = new List<OTDetails>();
+        }
+        public virtual List<PatientIPD> PatientIPDs { get; set; }
+        public virtual List<CustomerOPD> CustomerOPDs { get; set; }
+        public virtual List<OTDetails> OTDetails { get; set; }
+
+
     }
+
+
 }

@@ -6,9 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Hospital_Management.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class MedicineController : ApiController
     {
         [Route("api/medicine")]
@@ -44,6 +46,7 @@ namespace Hospital_Management.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
+
         [Route("api/medicine/delete/{id}")]
         [HttpGet]
         public HttpResponseMessage Delete(int id)
@@ -61,8 +64,6 @@ namespace Hospital_Management.Controllers
 
         }
 
-
-
         [Route("api/medicine/update/{id}")]
         [HttpPost]
         public HttpResponseMessage Update(MedicineDTO obj, int id)
@@ -79,5 +80,39 @@ namespace Hospital_Management.Controllers
             }
 
         }
+
+        [Route("api/medicine/{id}")]
+        [HttpGet]
+        public HttpResponseMessage Get(int id)
+        {
+            try
+            {
+                var data = MedicineService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+
+
+        }
+        [Route("api/medicine/search")]
+        [HttpPost]
+        public HttpResponseMessage Msearch(MedicineDTO obj)
+        {
+            try
+            { 
+              var data = MedicineService.Msearch(obj.Name);
+               return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+
+
+        }
+
     }
 }

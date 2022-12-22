@@ -19,5 +19,10 @@ namespace DAL.EF.Models
         [Required]
         public double Rent { get; set; }
 
+        public Cabin()
+        {
+            PatientIPDs = new List<PatientIPD>();
+        }
+        public virtual List<PatientIPD> PatientIPDs { get; set; }
     }
 }

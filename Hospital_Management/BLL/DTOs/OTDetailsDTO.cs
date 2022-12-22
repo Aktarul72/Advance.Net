@@ -10,11 +10,11 @@ namespace BLL.DTOs
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string FatherName { get; set; }
-        public string MotherName { get; set; }
-        public string Address { get; set; }
-        public int Age { get; set; }
-        public string Gender { get; set; }
-        public string Phone { get; set; }
+        public string PatientId { get; set; }
+        public string Details { get; set; }
+        public string Surgeon { get; set; }
+        public string Anesthetist { get; set; }
+        public DateTime OTDate { get; set; }
+        public int DoctorId { get; set; }
     }
 }

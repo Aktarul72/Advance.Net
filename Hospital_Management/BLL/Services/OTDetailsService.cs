@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static OTDetailsDTO Get(int id)
         {
-            var data = DataAccessFactory.OTDetailsDataAccess().Get();
+            var data = DataAccessFactory.OTDetailsDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<OTDetails, OTDetailsDTO>();
 
@@ -62,6 +62,11 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.OTDetailsDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.PatientId = dto.PatientId;
+            data.Details = dto.Details;
+            data.Surgeon = dto.Surgeon;
+            data.Anesthetist = dto.Anesthetist;
+            data.OTDate = dto.OTDate;
             DataAccessFactory.OTDetailsDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<OTDetails, OTDetailsDTO>());
             var mapper = new Mapper(config);

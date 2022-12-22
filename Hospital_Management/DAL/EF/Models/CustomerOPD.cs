@@ -19,12 +19,9 @@ namespace DAL.EF.Models
         public string Address { get; set; }
         [Required]
         public int Age { get; set; }
-        public DateTime DOB { get; set; }
         [StringLength(20)]
         [Required]
         public string Gender { get; set; }
-        [Required]
-        public string MaritalStatus { get; set; }
         public string BloodGroup { get; set; }
         [StringLength(15)]
         [Required]
@@ -34,13 +31,21 @@ namespace DAL.EF.Models
         public string RefdBy { get; set; }
         [StringLength(180)]
         public string Remark { get; set; }
-        public DateTime DeliveryDate { get; set; }
+        public DateTime? DeliveryDate { get; set; }
         [StringLength(40)]
         public string DeliveryStatus { get; set; }
 
         [ForeignKey("Doctor")]
-        public int DoctorId { get; set; }
+        public int? DoctorId { get; set; }
         public virtual Doctor Doctor { get; set; }
+
+        public CustomerOPD()
+        {
+            OPDOrderDetails = new List<OPDOrderDetails>();
+            OPDBillings = new List<OPDBilling>();
+        }
+        public virtual List<OPDOrderDetails> OPDOrderDetails { get; set; }
+        public virtual List<OPDBilling> OPDBillings { get; set; }
 
     }
 }

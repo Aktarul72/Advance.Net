@@ -16,29 +16,20 @@ namespace DAL.EF.Models
         public string Name { get; set; }
         [StringLength(200)]
         [Required]
-        public string FatherName { get; set; }
+        public string PatientId { get; set; }
         [StringLength(200)]
         [Required]
-        public string MotherName { get; set; }
+        public string Details { get; set; }
         [StringLength(250)]
         [Required]
-        public string Address { get; set; }
+        public string Surgeon { get; set; }
         [Required]
-        public int Age { get; set; }
-        [StringLength(20)]
+        public string Anesthetist { get; set; }
         [Required]
-        public string Gender { get; set; }
-        [StringLength(15)]
-        [Required]
-        public string Phone { get; set; }
-        [StringLength(180)]
-        [Required]
-        public string RefdBy { get; set; }
-        [StringLength(180)]
-        public string DutyDoctor { get; set; }
+        public DateTime OTDate { get; set; }     
 
         [ForeignKey("Doctor")]
-        public int DoctorId { get; set; }
+        public int? DoctorId { get; set; }
         public virtual Doctor Doctor { get; set; }
     }
 

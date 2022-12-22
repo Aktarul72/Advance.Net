@@ -12,8 +12,12 @@ namespace DAL.Repos
     {
         public PharmacyBilling Add(PharmacyBilling obj)
         {
+            DateTime dy = DateTime.Now;
+            obj.OrderDate = dy.Date;
             db.PharmacyBillings.Add(obj);
+
             if (db.SaveChanges() > 0) return obj;
+
             return null;
         }
 

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BLL.Services
 {
@@ -24,7 +25,7 @@ namespace BLL.Services
         }
         public static PharmacyOrderDetailsDTO Get(int id)
         {
-            var data = DataAccessFactory.PharmacyOrderDetailsDataAccess().Get();
+            var data = DataAccessFactory.PharmacyOrderDetailsDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<PharmacyOrderDetails, PharmacyOrderDetailsDTO>();
 
@@ -34,6 +35,7 @@ namespace BLL.Services
         }
         public static PharmacyOrderDetailsDTO Add(PharmacyOrderDetailsDTO PharmacyOrderDetails)
         {
+            PharmacyOrderDetailsDTO obj = new PharmacyOrderDetailsDTO() { Id = PharmacyOrderDetails.Id, MedicineName = PharmacyOrderDetails.MedicineName, Quantity = PharmacyOrderDetails.Quantity, TotalPrice = PharmacyOrderDetails.Quantity * PharmacyOrderDetails.TotalPrice, CustomerPharmacyId = PharmacyOrderDetails.CustomerPharmacyId, MedicineId = PharmacyOrderDetails.MedicineId };
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<PharmacyOrderDetailsDTO, PharmacyOrderDetails>();
@@ -41,10 +43,15 @@ namespace BLL.Services
 
             });
             var mapper = new Mapper(cfg);
-            var cab = mapper.Map<PharmacyOrderDetails>(PharmacyOrderDetails);
+            var cab = mapper.Map<PharmacyOrderDetails>(obj);
             var data = DataAccessFactory.PharmacyOrderDetailsDataAccess().Add(cab);
 
-            if (data != null) return mapper.Map<PharmacyOrderDetailsDTO>(data);
+            if (data != null) 
+            {
+                MedicineService.DMedicine(data.MedicineId, data.Quantity);
+                return mapper.Map<PharmacyOrderDetailsDTO>(data);
+            }
+            
             return null;
         }
         public static PharmacyOrderDetailsDTO Delete(int id)
@@ -70,5 +77,24 @@ namespace BLL.Services
             return PharmacyOrderDetails;
 
         }
+
+        public static List<PharmacyOrderDetailsDTO> OrderView(int id)
+        {
+            string s = id.ToString();
+            var data = Get();
+            var dt = (from d in data
+                      where d.CustomerPharmacyId.ToString().StartsWith(s)
+                      select d).ToList();
+            return dt;
+        }
+
+        public static void Addd(PharmacyOrderDetailsDTO PharmacyOrderDetails)
+        {
+            PharmacyOrderDetailsDTO obj= new PharmacyOrderDetailsDTO() {Id= PharmacyOrderDetails.Id, Quantity= PharmacyOrderDetails.Quantity, TotalPrice= PharmacyOrderDetails.Quantity* PharmacyOrderDetails.TotalPrice,CustomerPharmacyId= PharmacyOrderDetails.CustomerPharmacyId ,MedicineId= PharmacyOrderDetails.MedicineId };
+            PharmacyOrderDetailsService.Add(obj);
+
+        }
+
+
     }
 }

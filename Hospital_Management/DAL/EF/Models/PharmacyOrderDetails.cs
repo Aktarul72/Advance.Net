@@ -11,6 +11,14 @@ namespace DAL.EF.Models
     public class PharmacyOrderDetails
     {
         public int Id { get; set; }
+        [Required]
+        [StringLength(200)]
+        public string MedicineName { get; set; }
+        [Required]
+        public int Quantity { get; set; }
+
+        [Required]
+        public double TotalPrice { get; set; }
 
         [ForeignKey("CustomerPharmacy")]
         public int CustomerPharmacyId { get; set; }

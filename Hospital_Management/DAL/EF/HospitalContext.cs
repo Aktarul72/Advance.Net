@@ -25,5 +25,6 @@ namespace DAL.EF
         public DbSet<PharmacyOrderDetails> PharmacyOrderDetails { get; set; }
         public DbSet<OTDetails> OTDetails { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Token> Tokens { get; set; }
     }
 }

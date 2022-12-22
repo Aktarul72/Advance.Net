@@ -15,5 +15,11 @@ namespace DAL.EF.Models
         public string Name { get; set; }
         [Required]
         public double Rate { get; set; }
+
+        public ItemExam()
+        {
+            OPDOrderDetails = new List<OPDOrderDetails>();
+        }
+        public virtual List<OPDOrderDetails> OPDOrderDetails { get; set; }
     }
 }

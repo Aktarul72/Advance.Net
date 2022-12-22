@@ -12,6 +12,8 @@ namespace DAL.Repos
     {
         public OPDBilling Add(OPDBilling obj)
         {
+            DateTime dy = DateTime.Now;
+            obj.OrderDate = dy.Date;
             db.OPDBillings.Add(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;

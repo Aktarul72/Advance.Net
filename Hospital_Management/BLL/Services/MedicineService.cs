@@ -63,12 +63,33 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.MedicineDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.Price = dto.Price;
+            data.Quantity = dto.Quantity;
+            data.TotalPrice = dto.TotalPrice;
             DataAccessFactory.MedicineDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Medicine, MedicineDTO>());
             var mapper = new Mapper(config);
             var Medicine = mapper.Map<MedicineDTO>(data);
 
             return Medicine;
+
+        }
+
+        public static List<MedicineDTO> Msearch(string name)
+        {
+            var data = Get();
+            var dt = (from d in data
+                      where d.Name.ToLower().StartsWith(name)
+                      select d).ToList();
+            return dt;
+        }
+
+
+        public static void DMedicine(int id ,int quantity)
+        {   
+            var obj = MedicineService.Get(id);
+            obj.Quantity -= quantity;
+            var d=MedicineService.Update(obj);
 
         }
 

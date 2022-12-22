@@ -10,6 +10,7 @@ namespace BLL.DTOs
     {
         public int Id { get; set; }
         public string CategoryName { get; set; }
+        public string Status { get; set; }
         public double Rent { get; set; }
     }
 }

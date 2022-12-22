@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static ItemExamDTO Get(int id)
         {
-            var data = DataAccessFactory.ItemExamDataAccess().Get();
+            var data = DataAccessFactory.ItemExamDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<ItemExam, ItemExamDTO>();
 
@@ -62,6 +62,7 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.ItemExamDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.Rate = dto.Rate;
             DataAccessFactory.ItemExamDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<ItemExam, ItemExamDTO>());
             var mapper = new Mapper(config);
@@ -69,6 +70,15 @@ namespace BLL.Services
 
             return ItemExam;
 
+        }
+
+        public static List<ItemExamDTO> Msearch(string name)
+        {
+            var data = Get();
+            var dt = (from d in data
+                      where d.Name.ToLower().StartsWith(name)
+                      select d).ToList();
+            return dt;
         }
     }
 }

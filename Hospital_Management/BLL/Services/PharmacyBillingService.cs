@@ -42,6 +42,7 @@ namespace BLL.Services
             });
             var mapper = new Mapper(cfg);
             var ph = mapper.Map<PharmacyBilling>(PharmacyBilling);
+           
             var data = DataAccessFactory.PharmacyBillingDataAccess().Add(ph);
 
             if (data != null) return mapper.Map<PharmacyBillingDTO>(data);

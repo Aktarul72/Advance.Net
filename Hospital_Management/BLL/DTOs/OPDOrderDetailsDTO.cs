@@ -9,9 +9,9 @@ namespace BLL.DTOs
     public class OPDOrderDetailsDTO
     {
         public int Id { get; set; }
-
-        public int OPDBillingId { get; set; }
-
+        public string ItemName { get; set; }
+        public int TotalPrice { get; set; }
+        public int CustomerOPDId { get; set; }
         public int ItemExamId { get; set; }
     }
 }

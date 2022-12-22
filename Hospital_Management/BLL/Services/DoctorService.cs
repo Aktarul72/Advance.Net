@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static DoctorDTO Get(int id)
         {
-            var data = DataAccessFactory.DoctorDataAccess().Get();
+            var data = DataAccessFactory.DoctorDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Doctor, DoctorDTO>();
 
@@ -62,6 +62,11 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.DoctorDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.Address = dto.Address;
+            data.Gender = dto.Gender;
+            data.Phone = dto.Phone;
+            data.Qualification = dto.Qualification;
+            data.Specialization = dto.Specialization;
             DataAccessFactory.DoctorDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Doctor, DoctorDTO>());
             var mapper = new Mapper(config);

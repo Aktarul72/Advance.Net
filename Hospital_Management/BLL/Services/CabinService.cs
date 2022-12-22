@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static CabinDTO Get(int id)
         {
-            var data = DataAccessFactory.CabinDataAccess().Get();
+            var data = DataAccessFactory.CabinDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Cabin, CabinDTO>();
 
@@ -62,6 +62,8 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.CabinDataAccess().Get(dto.Id);
             data.CategoryName = dto.CategoryName;
+            data.Status = dto.Status;
+            data.Rent = dto.Rent;
             DataAccessFactory.CabinDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Cabin, CabinDTO>());
             var mapper = new Mapper(config);

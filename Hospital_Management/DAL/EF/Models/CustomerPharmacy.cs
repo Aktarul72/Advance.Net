@@ -22,5 +22,13 @@ namespace DAL.EF.Models
         [Required]
         public string Phone { get; set; }
 
+        public CustomerPharmacy()
+        {
+            PharmacyBillings = new List<PharmacyBilling>();
+            PharmacyOrderDetails = new List<PharmacyOrderDetails>();
+        }
+        public virtual List<PharmacyBilling> PharmacyBillings { get; set; }
+        public virtual List<PharmacyOrderDetails> PharmacyOrderDetails { get; set; }
+
     }
 }

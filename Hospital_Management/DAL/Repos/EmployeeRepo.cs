@@ -8,13 +8,20 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class EmployeeRepo : Repo, IRepo<Employee, int, Employee>
+    internal class EmployeeRepo : Repo, IRepo<Employee, int, Employee>, IAuth
     {
         public Employee Add(Employee obj)
         {
             db.Employees.Add(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;
+        }
+
+        public bool Authenticate(string uname, string pass)
+        {
+            var data = db.Employees.FirstOrDefault(u => u.Username.Equals(uname) && u.Password.Equals(pass));
+            if (data != null) return true;
+            return false;
         }
 
         public bool Delete(int id)

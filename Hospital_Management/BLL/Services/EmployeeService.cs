@@ -24,7 +24,7 @@ namespace BLL.Services
         }
         public static EmployeeDTO Get(int id)
         {
-            var data = DataAccessFactory.EmployeeDataAccess().Get();
+            var data = DataAccessFactory.EmployeeDataAccess().Get(id);
             var cfg = new MapperConfiguration(c => {
                 c.CreateMap<Employee, EmployeeDTO>();
 
@@ -62,6 +62,12 @@ namespace BLL.Services
         {
             var data = DataAccessFactory.EmployeeDataAccess().Get(dto.Id);
             data.Name = dto.Name;
+            data.Address = dto.Address;
+            data.Gender = dto.Gender;
+            data.Phone = dto.Phone;
+            data.Role = dto.Role;
+            data.Username = dto.Username;
+            data.Password = dto.Password;
             DataAccessFactory.EmployeeDataAccess().Update(data);
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Employee, EmployeeDTO>());
             var mapper = new Mapper(config);
@@ -69,6 +75,15 @@ namespace BLL.Services
 
             return Employee;
 
+        }
+
+        public static List<EmployeeDTO> Msearch(string Username)
+        {
+            var data = Get();
+            var dt = (from d in data
+                      where d.Username.ToLower().StartsWith(Username)
+                      select d).ToList();
+            return dt;
         }
     }
 }

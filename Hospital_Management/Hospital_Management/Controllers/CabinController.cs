@@ -6,9 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Hospital_Management.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class CabinController : ApiController
     {
         [Route("api/cabin")]
@@ -51,7 +53,7 @@ namespace Hospital_Management.Controllers
         {
             try
             {
-                var data = MedicineService.Delete(id);
+                var data = CabinService.Delete(id);
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Delete", data });
             }
             catch (Exception ex)
@@ -64,12 +66,12 @@ namespace Hospital_Management.Controllers
 
         [Route("api/cabin/update/{id}")]
         [HttpPost]
-        public HttpResponseMessage Update(MedicineDTO obj, int id)
+        public HttpResponseMessage Update(CabinDTO obj, int id)
         {
             try
             {
                 obj.Id = id;
-                var data = MedicineService.Update(obj);
+                var data = CabinService.Update(obj);
                 return Request.CreateResponse(HttpStatusCode.OK, new { Msg = "Up", data });
             }
             catch (Exception ex)
@@ -78,5 +80,21 @@ namespace Hospital_Management.Controllers
             }
             
         }
+
+        [Route("api/cabin/{id}")]
+        [HttpGet]
+        public HttpResponseMessage Get(int id)
+        {
+            try
+            {
+                var data = CabinService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
     }
 }

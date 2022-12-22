@@ -72,5 +72,15 @@ namespace DAL
             return new PharmacyOrderDetailsRepo();
         }
 
+
+        public static IAuth AuthDataAccess()
+        {
+            return new EmployeeRepo();
+        }
+        public static IRepo<Token, string, Token> TokenDataAccess()
+        {
+            return new TokenRepo();
+        }
+
     }
 }

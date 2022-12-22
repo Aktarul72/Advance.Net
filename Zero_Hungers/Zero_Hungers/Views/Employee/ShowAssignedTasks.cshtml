@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "ShowAssignedTasks";
+}
+
+<h2 class="bg-info">Assigned Tasks</h2>
+
+
+<br />
+<a href="/Employee/ShowPendingTasks" class="btn btn-warning">Show Pending Tasks</a>
+<br />
+<br />
+
+@foreach (var item in Model)
+{
+    <h3 class="btn-group-justified">User Name: @item.Employee.Name</h3>
+    <h4>Restaurant Name: @item.Restaurant.Name</h4>
+    <h4>Location: @item.Restaurant.Location</h4>
+    <h4>Food Name: @item.FoodName</h4>
+    <h4>Food Amount: @item.FoodAmount</h4>
+    <h4>Requested on: @item.CollectionDate</h4>
+    if (item.CollectionStatus == "Completed")
+    {
+        <h4>Status: <span class="text-success">@item.CollectionStatus</span></h4>
+    }
+    else if (item.CollectionStatus == "Wasted")
+    {
+        <h4>Status: <span class="text-danger">@item.CollectionStatus</span></h4>
+    }
+    else if (item.CollectionStatus == "Assigned")
+    {
+        <h4>Status: <span class="text-primary">@item.CollectionStatus</span></h4>
+    }
+    if (item.EmployeeId != null)
+    {
+        <h4>Assigned Employee: @item.Employee.Name</h4>
+    }
+    else
+    {
+        <h4>Assigned Employee: Not Assigned</h4>
+    }
+}
+
+<a href="/Login/Login" class="btn btn-danger m-3">Logout</a>

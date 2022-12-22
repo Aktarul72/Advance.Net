@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "ShowPendingTasks";
+}
+
+<h2 class="bg-info">Pending Tasks</h2>
+
+
+@foreach (var item in Model)
+{
+    <h3>Restaurant Name: <b>@item.Restaurant.Name</b></h3>
+    <h4>Location: @item.Restaurant.Location</h4>
+    <h4>Food Name: @item.FoodName</h4>
+    <h4>Food Amount: @item.FoodAmount</h4>
+    <h4>Requested on: @item.CollectionDate</h4>
+    if (item.CollectionStatus == "Completed")
+    {
+        <h4>Status: <span class="text-success">@item.CollectionStatus</span></h4>
+    }
+    else if (item.CollectionStatus == "Wasted")
+    {
+        <h4>Status: <span class="text-danger">@item.CollectionStatus</span></h4>
+    }
+    else if (item.CollectionStatus == "Assigned")
+    {
+        <h4>Status: <span class="text-primary">@item.CollectionStatus</span></h4>
+    }
+    
+    if (item.EmployeeId != null)
+    {
+        <h4>Assigned Employee: @item.Employee.Name</h4>
+    }
+    else
+    {
+        <h4>Assigned Employee: Not Assigned</h4>
+    }
+    <a href="/Employee/Complete/@item.Id" class="btn btn-success">Done</a>
+}

@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<center>
+    <h2>Admin Dashboard</h2>
+</center>
+
+    <center><h3 class="bg-success">Organization Name:<b> @Model.Name</b></h3></center>
+    <h4>Contact: @Model.Phone</h4>
+    <h4>Current Employee: @Model.CurrentEmployee</h4>
+    <h4>Total Collection Request: @Model.TotalCollectionRequest</h4>
+    <h4>Total Completed Requests: @Model.TotalCompletedRequest</h4>
+
+    <a href="/Admin/EmployeeList" class="btn btn-success">Employee List</a>
+    <a href="/Admin/AddNewEmployee" class="btn btn-warning">Add New Employee</a>
+    <a href="/Admin/AddNewRestaurant" class="btn btn-warning">Add New Restaurant</a>
+    <a href="/Admin/AllTasks" class="btn btn-warning">Show All Tasks</a>
+    <a href="/Admin/TaskAssign" class="btn btn-success">Assign New Task</a>
+
+
+
+    <a href="/Login/Login" class="btn btn-danger m-3">Logout</a>
